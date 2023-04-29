@@ -8,6 +8,11 @@ const w = require('winston');
 
 app.use(express.json())
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+
 app.post('/api/add', (req, res) => {
 
     // Checks the parameter & gets the variables in a json format
