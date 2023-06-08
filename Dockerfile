@@ -1,4 +1,4 @@
-FROM node:12
+FROM --platform=linux/amd64 node:12
 
 WORKDIR /app
 
@@ -12,4 +12,4 @@ ENV PORT=3000
 
 EXPOSE 3000
 
-CMD ["node", "microsrvc.js" ]
+CMD [ "node",  "microsrvc.js" ]
